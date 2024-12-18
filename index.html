@@ -182,13 +182,36 @@
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
-            <h1>Pengunjung Wajib Mengisi Buku Tamu</h1>
-                     
+          <h2>Form Buku Tamu</h2>
+    <form action="insert.php" method="post">
+        <table>
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td><input id="nim" type="integer" name="nim" placeholder="Masukkan NIM" size="11" required></td>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td><input id="nama" type="varchar" name="nama" placeholder="Masukkan Nama Lengkap" size="30" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input id="email" type="varchar" name="email" placeholder="Masukkan Alamat Email" size="30" required></td>
+            </tr>
+            <tr>
+                <td><label for="pesan">Pesan</label></td>
+                <td>
+                    <textarea id="pesan" name="pesan" placeholder="Masukkan pesan atau kalimat panjang..." rows="5" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="form-buttons">
+                    <input type="submit" name="simpan" value="Simpan">
+                    <input type="reset" name="batal" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
           </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
         
       </div>
     </div>
