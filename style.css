@@ -329,7 +329,7 @@ p {
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
-	max-width: 1200px;
+	max-width: 1200px auto;
 	margin: 0 auto;
 	padding: 100px 0;
 }
@@ -347,56 +347,69 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
+	width: 100%;
+	margin: auto;
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+
+#projects .project-info 
+h2 {
+	text-align: center;
 }
-#projects .project-info h1 {
-	font-size: 4rem;
-	font-weight: 500;
-}
-#projects .project-info h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	margin-top: 10px;
-}
-#projects .project-info p {
-	color: white;
-}
-#projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-}
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
+table {
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 50px auto;
 }
-#projects .project-img img {
-	transition: 0.3s ease transform;
+
+table td {
+	padding: 20px;
+	font-size: 18px;
+	vertical-align: top;
 }
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
+
+textarea {
+	width: 95%; /* Lebar mengikuti kolom tabel */
+	padding: 10px;
+	font-size: 16px;
+	box-sizing: border-box;
+	min-height: 150px; /* Tinggi minimum yang lebih besar */
+	resize: vertical; /* Izinkan pengguna mengubah ukuran vertikal */
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
 }
+
+.form-buttons {
+	text-align: center; /* Memusatkan tombol */
+}
+
+.form-buttons input {
+	padding: 10px 20px;
+	font-size: 16px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #007bff;
+	color: white;
+}
+
+.form-buttons input[type="reset"] {
+	background-color: #dc3545;
+}
+
+.form-buttons input:hover {
+	background-color: #0056b3; /* Warna saat hover untuk tombol Simpan */
+}
+
+.form-buttons input[type="reset"]:hover {
+	background-color: #c82333; /* Warna saat hover untuk tombol Batal */
+}
+
+
 /* End Projects section */
 
 /* About Section */
