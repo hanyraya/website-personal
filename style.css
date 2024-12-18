@@ -358,55 +358,40 @@ h2 {
 	text-align: center;
 }
 table {
-	width: 100%;
+	width: 600px;
 	border: 1px solid black;
 	border-collapse: collapse;
-	margin: 50px auto;
+	margin: 30px auto;
 }
-
 table td {
-	padding: 20px;
-	font-size: 18px;
+	padding: 10px;
+	font-size: 15px;
 	vertical-align: top;
 }
-
-textarea {
-	width: 95%; /* Lebar mengikuti kolom tabel */
+input, textarea {
+	width: 100%;
 	padding: 10px;
-	font-size: 16px;
+	font-size: 15px;
 	box-sizing: border-box;
-	min-height: 150px; /* Tinggi minimum yang lebih besar */
-	resize: vertical; /* Izinkan pengguna mengubah ukuran vertikal */
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	background-color: #f9f9f9;
 }
-
 .form-buttons {
-	text-align: center; /* Memusatkan tombol */
+	text-align: center;
 }
-
 .form-buttons input {
-	padding: 10px 20px;
-	font-size: 16px;
-	margin: 5px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+	width: 100px;
+	padding: 5px;
+	font-size: 14px;
 	cursor: pointer;
-	background-color: #007bff;
+}
+input[type="reset"]:hover {
+	background: red;
+	border: 1px solid black;
 	color: white;
 }
-
-.form-buttons input[type="reset"] {
-	background-color: #dc3545;
-}
-
-.form-buttons input:hover {
-	background-color: #0056b3; /* Warna saat hover untuk tombol Simpan */
-}
-
-.form-buttons input[type="reset"]:hover {
-	background-color: #c82333; /* Warna saat hover untuk tombol Batal */
+input[type="submit"]:hover {
+	background: green;
+	border: 1px solid black;
+	color: white;
 }
 
 
